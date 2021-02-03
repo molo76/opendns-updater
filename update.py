@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import configparser
 import requests
 from requests.auth import HTTPBasicAuth
@@ -10,7 +12,7 @@ def update_ip():
     label = cp.get('Main', 'label')
     username = cp.get('Main', 'username')
     password = cp.get('Main', 'password')
-  except ConfigParser.NoSectionError as e:
+  except configparser.NoSectionError as e:
     print("Please make sure you have a config.ini file in this directory, with label, username, and password defined.")
     return
 
