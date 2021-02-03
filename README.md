@@ -1,12 +1,14 @@
 # OpenDNS-Updater
 
-OpenDNS's "Dynamic IP" updater is a little opaque. Try using this python script instead, which you can customize for your own needs.
+OpenDNS's "Dynamic IP" updater is a little opaque, and seems pretty broken on MacOS Big Sur. 
+
+Try using this python script instead, which you can customize for your own needs. This runs in Python3, original repo https://github.com/richgong/opendns-updater has a python2 version. 
 
 ## Install
 
 Install required python modules:
 
-`pip install -r requirements.txt`
+`pip3 install -r requirements.txt`
 
 ## Configuration
 
@@ -21,7 +23,7 @@ Create a config file called `config.ini` in the same directory:
 
 Run this to update your IP address:
 
-`python update.py`
+`python3 update.py`
 
 ## Not working?
 
